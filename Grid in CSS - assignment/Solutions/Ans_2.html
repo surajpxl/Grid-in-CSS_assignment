@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Eats</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+
+      /* Navigation Styles */
+      header {
+        background-color: #2d3436;
+        padding: 15px 0;
+      }
+
+      nav {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+
+      nav img {
+        width: 45px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+
+      nav a:hover {
+        color: #74b9ff;
+      }
+
+      nav button {
+        padding: 8px 20px;
+        border: none;
+        background-color: #55efc4;
+        color: #2d3436;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      /* Hero Section Styles */
+      .hero {
+        max-width: 1100px;
+        margin: 50px auto;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .hero-text {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 50px;
+        color: #2d3436;
+        margin-bottom: 20px;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #636e72;
+      }
+
+      .hero-text button {
+        margin-top: 25px;
+        padding: 12px 35px;
+        border: none;
+        background-color: #6c5ce7;
+        color: white;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+
+      .hero-image {
+        flex: 1;
+        max-height: 80vh;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-image img {
+        max-width: 100%;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2921/2921823.png"
+          alt="Fresh Eats Logo"
+        />
+        <div>
+          <a href="#">Home</a><a href="#">Menu</a><a href="#">Contact Us</a>
+        </div>
+        <button>Sign Up</button>
+      </nav>
+    </header>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Fresh & Delicious</h1>
+        <p>
+          Discover the best healthy food options that are as tasty as they are
+          nutritious. Our dishes are crafted with the freshest ingredients to
+          delight your taste buds and support your well-being. Join us on a
+          culinary journey that’s as rewarding as it is delicious.
+        </p>
+        <button>Explore Now</button>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://media.istockphoto.com/id/589415708/photo/fresh-fruits-and-vegetables.jpg?s=612x612&w=is&k=20&c=0KUXg_vETkKHFrjtTWrY8EbFW-KVkwjrmAnS43ljqHA="
+          alt="Healthy Eating"
+        />
+      </div>
+    </div>
+  </body>
+</html>

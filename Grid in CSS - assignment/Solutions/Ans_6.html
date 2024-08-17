@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Timetable</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 20px 0;
+        margin: 0;
+        background-color: #5da3fa;
+        color: #fff;
+        font-size: 2em;
+      }
+
+      .timetable-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        max-width: 1200px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .timetable-header,
+      .timetable-item {
+        padding: 20px 10px;
+        text-align: center;
+        border: 2px solid #ccc;
+        background-color: #e0e0e0;
+      }
+
+      .timetable-header {
+        background-color: #ff6666;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .timetable-row {
+        background-color: #03c6c7;
+      }
+
+      .lunch {
+        background-color: #edc126;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .activity {
+        background-color: #1faa59;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .span-2 {
+        grid-column: span 2;
+        background-color: #cad5e2;
+      }
+
+      .subject {
+        background-color: #8d3daf;
+        color: #fff;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>School Timetable</h1>
+    <div class="timetable-container">
+      <div class="timetable-header">TIME</div>
+      <div class="timetable-header">08:00 AM - 09:00 AM</div>
+      <div class="timetable-header">09:00 AM - 10:00 AM</div>
+      <div class="timetable-header">10:00 AM - 11:00 AM</div>
+      <div class="timetable-header">11:00 AM - 12:00 PM</div>
+      <div class="timetable-header">12:00 PM - 02:00 PM</div>
+      <div class="timetable-header">02:00 PM - 03:00 PM</div>
+      <div class="timetable-header">03:00 PM - 04:00 PM</div>
+
+      <div class="subject">Monday</div>
+      <div class="timetable-item">English</div>
+      <div class="timetable-item">Biology</div>
+      <div class="timetable-item">Physics</div>
+      <div class="timetable-item">Chemistry</div>
+      <div class="timetable-item lunch">Lunch</div>
+      <div class="timetable-item span-2">Chemistry Lab</div>
+
+      <div class="subject">Tuesday</div>
+      <div class="timetable-item span-2">Biology Lab</div>
+      <div class="timetable-item">Physics</div>
+      <div class="timetable-item">Chemistry</div>
+      <div class="timetable-item lunch">Lunch</div>
+      <div class="timetable-item">English</div>
+      <div class="timetable-item">Biology</div>
+
+      <div class="subject">Wednesday</div>
+      <div class="timetable-item">English</div>
+      <div class="timetable-item">Biology</div>
+      <div class="timetable-item">Physics</div>
+      <div class="timetable-item">Chemistry</div>
+      <div class="timetable-item lunch">Lunch</div>
+      <div class="timetable-item span-2 activity">Games</div>
+
+      <div class="subject">Thursday</div>
+      <div class="timetable-item span-2">Biology Lab</div>
+      <div class="timetable-item">Physics</div>
+      <div class="timetable-item">Chemistry</div>
+      <div class="timetable-item lunch">Lunch</div>
+      <div class="timetable-item">English</div>
+      <div class="timetable-item">Biology</div>
+
+      <div class="subject">Friday</div>
+      <div class="timetable-item">English</div>
+      <div class="timetable-item">Biology</div>
+      <div class="timetable-item">Physics</div>
+      <div class="timetable-item">Chemistry</div>
+      <div class="timetable-item lunch">Lunch</div>
+      <div class="timetable-item span-2">Physics Lab</div>
+
+      <div class="subject">Saturday</div>
+      <div class="timetable-item span-2">Biology Lab</div>
+      <div class="timetable-item">Physics</div>
+      <div class="timetable-item">Chemistry</div>
+      <div class="timetable-item lunch">Break</div>
+      <div class="timetable-item span-2 activity">Let Off</div>
+    </div>
+  </body>
+</html>
